@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+      --poppins: 'Poppins', sans-serif;
+      --text-color: #323232;
+      --font-sz: 14px;
+      --navbar: #a3a3a3;
+      --white: #fff;
+      --black: #000;
+      --primary: #bd8448;
+      --line: #e1e1e1;
+      --sales: #c3c3c3;
+      --footer-bg: #232323;
+      --text-footer: #666666;
+      --input: #c3c3c3;
+      --secondary: #201f1f;
+}
+
+*,
+*::before,
+*::after {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+}
+
+* {
+      text-decoration: none;
+      list-style-type: none;
+}
+
+img {
+      width: 100%;
+      display: block;
+}
+
+a {
+      display: block;
+}
+
+html {
+      font-family: var(--poppins);
+      font-size: 14px;
+      color: var(--text-color);
+      font-weight: 400;
+}
+
+.admin__app {
+      display: flex;
+}
+
+.list__navbar {
+      padding-top: 50px;
+}
+
+.list__navbar li a.active {
+      color: var(--primary);
+      background: var(--black);
+      opacity: 0.5;
+}
+
+.list__navbar li a {
+      color: var(--white);
+      padding: 15px 50px;
+      font-size: 18px;
+      transition: 0.3s ease-in;
+      display: flex;
+      align-items: center;
+}
+
+.list__navbar li a i {
+      width: 50px;
+      height: 50px;
+      border-radius: 100rem;
+      background-color: var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+}
+
+.list__navbar li a:hover {
+      color: var(--primary);
+      background: var(--black);
+      opacity: 0.5;
+}
+
+.navigation {
+      background-color: var(--text-color);
+      border-radius: 0 100px 0 0;
+      overflow: hidden;
+}
+
+.slider__navbar {
+      position: relative;
+}
+
+.navbar {
+      background-color: var(--white);
+      position: fixed;
+      width: 20%;
+}
+
+.navbar__logo {
+      width: 100%;
+}
+
+.navbar__logo a {
+      width: 180px;
+      margin: 0 auto;
+      padding-top: 60px;
+      padding-bottom: 50px;
+}
+
+.navbar__button {
+      border: none;
+      outline: none;
+      background: transparent;
+      margin-top: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 40px;
+}
+
+.navbar__button a {
+      color: var(--black);
+      transition: 0.3s ease-in;
+      font-size: 20px;
+      display: block;
+      padding: 15px 30px;
+      width: 80%;
+      border-radius: 15px;
+      background: var(--white);
+}
+
+.navbar__button a:hover {
+      color: var(--primary);
+      background: var(--black);
+      opacity: 0.5;
+}
+
+.header__search {
+      --height: 80px;
+      background-color: var(--white);
+      height: var(--height);
+      padding: 20px 20px;
+      margin-top: 40px;
+}
+
+.header__search-group,
+form {
+      width: 100%;
+      height: 100%;
+}
+
+.header__search-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.search__group-form {
+      border-radius: 30px;
+      height: 40px;
+      width: 60%;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      position: relative;
+}
+
+.search__group-form button {
+      width: 20%;
+      height: 100%;
+      border-radius: 30px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+      border: 3px solid var(--line);
+      transition: 0.3s ease-in;
+      background: var(--text-color);
+      overflow: hidden;
+}
+
+.search__group-form button i {
+      color: white;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s ease-in;
+}
+
+.search__group-form button i:hover {
+      color: var(--primary);
+      background: var(--black);
+      opacity: 0.5;
+      box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+}
+
+.search__group-form input {
+      width: 100%;
+      border-radius: 30px;
+      height: 100%;
+      border: none;
+      outline: none;
+      padding-left: 20px;
+      font-size: 16px;
+      font-weight: 600;
+}
+
+.search__group-form input,
+.search__group-form button {
+      display: inline-block;
+}
+
+.title {
+      margin: 40px 0 0;
+      padding-bottom: 20px;
+      font-size: 30px;
+      letter-spacing: 2px;
+      font-weight: 500;
+      border-bottom: 1px solid var(--secondary);
+}
+
+table {
+      width: 100%;
+      text-align: center;
+      display: table;
+}
+
+th:first-child {
+      padding: 20px;
+}
+
+th {
+      font-size: 16px;
+      font-weight: 400;
+}
+
+td {
+      font-size: 14px;
+}
+
+tr.table__row {
+      border-radius: 30px;
+      width: 100%;
+      transition: 0.3s ease-out;
+}
+
+tr.table__row:hover {
+      box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
+}
+
+tr.table__row td {
+      padding: 15px 0;
+}
+
+.btn {
+      display: inline-block;
+      padding: 5px 20px;
+      background: transparent;
+      transition: 0.3 ease-in;
+      border-radius: 15px;
+      margin-right: 5px;
+}
+
+.btn-update {
+      color: var(--white);
+      background: green;
+      transition: 0.3s ease-in;
+}
+
+.btn-update:hover {
+      background: rgb(85, 154, 85);
+}
+
+.btn-delete {
+      color: var(--white);
+      background: rgb(167, 61, 61);
+}
+
+.btn-delete:hover {
+      background: rgb(159, 91, 91);
+}
+.description {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+}
+/* .display__item {
+      display: none;
+} */
+
+.image__user {
+      border-radius: 100rem;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      background-image: url(../images/three_banner-1.avif);
+      background-position: center;
+      transition: 0.3 ease-in;
+      box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px;
+}
+
+.name__user {
+      font-weight: 500;
+      font-size: 16px;
+}
+
+.admin__user {
+      display: flex;
+      align-items: center;
+}
+
+.admin__user:hover {
+      cursor: pointer;
+      color: var(--navbar);
+}
+
+/* .admin__app {
+      position: relative;
+}
+
+
+} */
+
+.slide__navbar.active {
+      left: 0;
+}
+
+#btn-menu {
+      font-size: 25px;
+      transition: 0.4s ease-out;
+}
+
+.fa-times {
+      transform: rotate(180deg);
+}
+
+/* dashboard ------------------------------------------------------------------------- */
+
+.dash-container {
+      display: flex;
+      align-items: center;
+}
+
+.dash-box {
+      border-radius: 10px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 30px;
+      margin-top: 10px;
+      background: var(--text-color);
+      box-shadow: 0 0.46875rem 2.1875rem rgb(90 97 105 / 10%),
+            0 0.9375rem 1.40625rem rgb(90 97 105 / 10%),
+            0 0.25rem 0.53125rem rgb(90 97 105 / 12%),
+            0 0.125rem 0.1875rem rgb(90 97 105 / 10%);
+}
+
+.dash-box-top {
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.dash-box-top .dash-box-icon {
+      margin: 25px;
+      width: 50px;
+      height: 50px;
+      font-size: 22px;
+      box-shadow: 5px 3px 10px 0 rgb(21 15 15 / 30%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.dash-box-icon.box-bg--purple {
+      background: #6f42c1;
+}
+.dash-box-icon.box-bg--orange {
+      background: #fd7e14;
+}
+.dash-box-icon.box-bg--green {
+      background: #198754;
+}
+.dash-box-icon.box-bg--blue {
+      background: #0dcaf0;
+}
+
+.dash-box-top .dash-box-total {
+      text-align: right;
+      margin: 21px;
+}
+
+.dash-box-total .dash-box-title {
+      margin-bottom: 7px;
+      font-size: 14px;
+}
+
+.dash-box-total .dash-box-count {
+      padding-left: 14px;
+      padding-right: 14px;
+      font-size: 26px;
+}
+
+.dash-box .dash-line-count {
+      padding: 1rem;
+}
+.dash-line-count .dash-line-count--white {
+      background-color: var(--white);
+      height: 10px;
+      overflow: hidden;
+      display: flex;
+}
+.dash-line-count--colors {
+      width: 45%;
+      line-height: 16px;
+      color: #fff;
+}
+
+.colors--purple {
+      background: linear-gradient(to right, #834d9b, #d04ed6);
+}
+.colors--orange {
+      background: linear-gradient(to right, #f7971e, #ffd200);
+}
+.colors--green {
+      background: linear-gradient(to right, #56ab2f, #a8e063);
+}
+.colors--light-blue {
+      background: linear-gradient(45deg, #72c2ff, #86f0ff);
+}
